@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.5.0/knockout-min.js"></script>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        //.btn {background:lightblue;}
+        #show_result {background:lightblue;}
+        #btn_btc {background:yellow;}
+        #btn_ltc {background:green;}
+        #btn_sek {background:red;}
+        #btn_euro {background:blue;}
+
+        table {
+        width: 100%;
+    }
+    </style>
+</head>
+<body>
+
+<h1>Swedish future monetary system election</h1>
+<br>
+Voter id: <input type="text" id="voter_id"/>
+<br>
+<br>
+<table>
+  <tr>
+      <td><button class="btn" id="btn_btc">Vote for BTC</button></td>
+      <td><button class="btn" id="btn_ltc">Vote for LTC</button></td>
+      <td><button class="btn" id="btn_sek">Vote for SEK</button></td>
+      <td><button class="btn" id="btn_euro">Vote for Euro</button></td>
+  </tr>
+
+</table>
+<br>
+<br>
+<br>
+<button id="show_result">Show election result </button>
+<br>
+<br>
+<br>
+<canvas id="votes_diagram" width="800px" height="300px" ></canvas>
+
+
+</body>
+
+<script src="/files/BigChainDBVoting.js"></script>
+
+</html>
